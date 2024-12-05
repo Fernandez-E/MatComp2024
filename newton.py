@@ -27,8 +27,8 @@ x = xtemp - (fx/dx)
 fx = eval(funcao[0])
 dx = eval(funcao[1])
 
-while abs(dx - dxtemp) > eadm:
-    print(f"xi-1 = {x:10.2f} | f(xi-1) = {fx:10.2f} | f'(x-1) = {dx:10.2f} | Erro = {abs(dx - dxtemp):10.2f}")
+while abs(x - xtemp) > eadm:
+    print(f"xi-1 = {x:10.4f} | f(xi-1) = {fx:10.4f} | f'(x-1) = {dx:10.4f} | Erro = {abs(x - xtemp):10.4f}")
 
     xtemp = x
     fxtemp = fx
@@ -38,4 +38,6 @@ while abs(dx - dxtemp) > eadm:
     fx = eval(funcao[0])
     dx = eval(funcao[1])
 
+print(f"xi-1 = {x:10.4f} | f(xi-1) = {fx:10.4f} | f'(x-1) = {dx:10.4f} | Erro = {abs(x - xtemp):10.4f}\n")
 
+print(f"Raiz aproximada: {x:10.5f} | f(x) = {fx:10.5f}")

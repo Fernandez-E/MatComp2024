@@ -1,6 +1,5 @@
 # def gauss_seidel(matriz, dimensao):
     # INSERCAO DE DADOS DE ENTRADA
-dimensao = 2
 print('Entrada:')
 print('#' * 100)
 recorrencia = []
@@ -27,14 +26,13 @@ erroatual1 = abs(x - xtemp)
 erroatual2 = abs(y - ytemp)
 
 while erroatual1 > erroadm or erroatual2 > erroadm:
-
     x = xtemp
     y = ytemp
-
     print(f'x = {x:.2f} ({erroatual1:.4f})| y = {y:.2f} ({erroatual2:.4f})')
-
     xtemp = (eval(recorrencia[0]))
     ytemp = (eval(recorrencia[1]))
-
     erroatual1 = abs(x - xtemp)
     erroatual2 = abs(y - ytemp)
+
+
+
