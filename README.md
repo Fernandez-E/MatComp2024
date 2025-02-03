@@ -7,4 +7,8 @@ Os códigos apresentados foram desenvolvidos durante a Estágio de Docência na 
 - Método Iterativo de Gauss-Seidel  
 #### Raízes de equações implícitas  
 - Método Iterativo de Newton  
-- Método Iterativo de Secantes  
+- Método Iterativo de Secantes
+#### Interpolação numérica
+- Método de Lagrange
+#### Integração numérica
+- Método dos Trapézios
