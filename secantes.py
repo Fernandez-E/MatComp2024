@@ -24,7 +24,7 @@ for i in range(2):
     print(f"{x:10.4f} | f({x:2.4f}) = {varfx[-1]:10.4f}")
 
 while abs(varx[-1] - varx[-2]) > eadm:
-    x = (varfx[-1]*varx[-2] - varfx[-2]*varx[-1]) / (varfx[-1]-varfx[-2])
+    x = (varfx[-1] * varx[-2] - varfx[-2] * varx[-1]) / (varfx[-1] - varfx[-2])
     # x = varx[-1] - (varfx[-1] * (varx[-1] - varx[-2])) / (varfx[-1] - varfx[-2])
     fx = eval(funcao[0])
 
@@ -33,9 +33,6 @@ while abs(varx[-1] - varx[-2]) > eadm:
 
     print(f"{x:10.4f} | f({x:2.4f}) = {varfx[-1]:10.4f} | Erro = {abs(varx[-1] - varx[-2]):10.4f}")
 
-# Resultado final
 print(f"Raiz aproximada: {varx[-1]:10.6f} | f(x) = {varfx[-1]:10.6f}")
 
-
-
-
+# Resultado final
