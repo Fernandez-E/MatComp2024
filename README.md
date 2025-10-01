@@ -1,6 +1,6 @@
 ## Métodos numéricos aplicados à matemática computacional
 
-Os códigos apresentados foram desenvolvidos durante a Estágio de Docência na disciplina de Matemática Computacional do Programa de  Pós-Graduação em Engenharia Agícola (PGEA) da Universidade Federal Rural de Pernambuco (UFRPE), contendo:
+Os códigos apresentados foram desenvolvidos durante a Estágio de Docência do Programa de  Pós-Graduação em Engenharia Agícola (PGEA) da Universidade Federal Rural de Pernambuco (UFRPE), na disciplina de Matemática Computacional do curso de Graduação em Engenharia Agrícola e Ambiental da mesma Universidade, contendo:
 
 #### Resolução de sistemas de equações lineares  
 - Método Iterativo de Jacobi  
@@ -12,3 +12,4 @@ Os códigos apresentados foram desenvolvidos durante a Estágio de Docência na 
 - Método de Lagrange
 #### Integração numérica
 - Método dos Trapézios
+#### Derivação numérica
