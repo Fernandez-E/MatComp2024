@@ -18,7 +18,7 @@ for x in range(tamanho_matriz):
 for linha in matriz_resultado:
     print(linha)
 
-
+print('\n')
 i = 0
 while i < tamanho_matriz - 1:
     pivo = matriz[i][i]
@@ -41,5 +41,3 @@ resultados.append(matriz_resultado[2] / matriz[2][2])
 resultados.append((matriz_resultado[1] - matriz[1][2] * resultados[0]) / matriz[1][1])
 resultados.append((matriz_resultado[0] - matriz[0][2] * resultados[0] - matriz[0][1] * resultados[1]) / matriz[0][0])
 print(resultados)
-
-
