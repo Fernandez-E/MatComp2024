@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+from time import sleep
+
 x, fx, dx2 = [], [], []
 temp = 0
 t, r = 0, 0
@@ -41,7 +43,6 @@ while k < 100:
     k += 1
     plt.plot(x, fx)
     plt.ylim(0, 20)
-    plt.title("Exemplo de gráfico simples")
     plt.xlabel("Eixo X")
     plt.ylabel("Eixo Y")
 
