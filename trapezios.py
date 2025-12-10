@@ -20,7 +20,7 @@ while i <= limite_superior:
 print('\nValores da funcao:')
 for j in range(len(valores_fx)):
     print(f'f({valores_x[j]:8.4f}) = {valores_fx[j]:8.4f}')
-    sleep(0.5)
+    sleep(0.1)
 
 somatorio = 0
 for k in range(len(valores_fx)-1):

@@ -1,9 +1,4 @@
-base = 0
-declividade = 0
-rugosidade = 0
-vazao = 0
 talude = 0
-eadm = 0
 fy1, fy2 = 0, 0
 manning = ''
 
@@ -14,28 +9,25 @@ print('Para qual tipo de canal que deseja realizar o cálculo?')
 print('1 - Retangular')
 print('2 - Trapezoidal')
 tipo_canal = int(input('>>> '))
+
 if tipo_canal == 1:
     print('#' * 100)
     print(f'DIMENSIONAMENTO DE CANAIS RETANGULARES')
     print('#' * 100)
-    print(f'CARACTERÍSTICAS DO CANAL:')
-    base = float(input('Insira a base do canal (m): '))
-    declividade = float(input('Insira a declividade de fundo do canal (m/m): '))
-    rugosidade = float(input('Insira a rugosidade do canal: '))
-    vazao = float(input('Insira a vazão de interesse para a determinação da lâmina de escoamento (m3/s): '))
-    eadm = float(input('Insira o erro admissível do problema: '))
 
 elif tipo_canal == 2:
     print('#' * 100)
     print(f'DIMENSIONAMENTO DE CANAIS TRAPEZOIDAIS')
     print('#' * 100)
-    print(f'CARACTERÍSTICAS DO CANAL:')
-    base = float(input('Insira a base do canal (m): '))
-    declividade = float(input('Insira a declividade de fundo do canal (m/m): '))
-    rugosidade = float(input('Insira a rugosidade do canal: '))
-    talude = float(input('Insira o talude do canal: '))
-    vazao = float(input('Insira a vazão de interesse para a determinação da lâmina de escoamento (m3/s): '))
-    eadm = float(input('Insira o erro admissível do problema: '))
+
+print(f'CARACTERÍSTICAS DO CANAL:')
+base = float(input('Base (m): '))
+declividade = float(input('Declividade de fundo (m/m): '))
+rugosidade = float(input('Rugosidade: '))
+if tipo_canal == 2:
+    talude = float(input('Z do talude: '))
+vazao = float(input('Vazão de interesse (m3/s): '))
+eadm = float(input('Insira o erro admissível do problema: '))
 
 y = (rugosidade * vazao / (base * declividade ** (1 / 2))) ** (3 / 5)
 print('#' * 100)

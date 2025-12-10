@@ -71,4 +71,4 @@ for i in range(len(x1)):
 
 r2 = ve / vt
 
-print(f'A funcao de regressao e: y = {b1:.4f}x1 + {b2:.4f}x2 + {a:.4f} (R2 = {R2:.4f})')
+print(f'A funcao de regressao e: y = {b1:.4f}x1 + {b2:.4f}x2 + {a:.4f} (R2 = {r2:.4f})')
